@@ -9,5 +9,8 @@ set drive=%drive:~0,2%
 
 if not exist "%drive%\Backup" md "%drive%\emoo"
 robocopy "%USERPROFILE%\Music" "%drive%\emoo\Music" /E /R:2 /W:2 /MT:8 /NP /NFL /NDL
+robocopy "%USERPROFILE%\Pictures" "%drive%\emoo\Pictures" /E /R:2 /W:2 /MT:8 /NP /NFL /NDL
+robocopy "%USERPROFILE%\Documents" "%drive%\emoo\Documents" /E /R:2 /W:2 /MT:8 /NP /NFL /NDL
+robocopy "%USERPROFILE%\Videos" "%drive%\emoo\Videos" /E /R:2 /W:2 /MT:8 /NP /NFL /NDL
 
 exit /b
